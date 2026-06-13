@@ -1,11 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect , useState} from 'react';
 import Container from "@mui/material/Container";
 import Typography from '@mui/material/Typography';
 import CloudIcon from '@mui/icons-material/Cloud';
 import Button from '@mui/material/Button';
-import axios from "axios";
 import moment from "moment"
 import "moment/min/locales";
 import { useTranslation } from 'react-i18next';
