@@ -1,0 +1,36 @@
+{
+  "ar": {
+    "hello_world": "أهلاً بالعالم",
+    "min": "الصغرى",
+    "max": "الكبرى",
+    "light rain": "مطر خفيف",
+    "heavy intensity rain": "أمطار غزيرة",
+    "clear sky": "سماء صافية",
+    "few clouds": "بعض الغيوم",
+    "scattered clouds": "سحب متفرقة",
+    "broken clouds": "غيوم متقطعة",
+    "shower rain": "زخات مطر",
+    "rain": "ماطر",
+    "thunderstorm": "رعد / عاصفة رعدية",
+    "snow": "ثلج",
+    "mist": "ضباب خفيف",
+    "As-Suwayda": "السويداء"
+    },
+    "en": {
+    "hello_world": "Hello World",
+    "min": "Min",
+    "max": "Max",
+    "light rain": "Light Rain",
+    "heavy intensity rain": "Heavy Intensity Rain",
+    "clear sky": "Clear Sky",
+    "few clouds": "Few Clouds",
+    "scattered clouds": "Scattered Clouds",
+    "broken clouds": "Broken Clouds",
+    "shower rain": "Shower Rain",
+    "rain": "Rain",
+    "thunderstorm": "Thunderstorm",
+    "snow": "Snow",
+    "mist": "Mist",
+    "As-Suwayda": "As-Suwayda"
+    }
+}
