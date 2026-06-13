@@ -3,7 +3,7 @@ import axios from "axios";
 
 const baseUrl=process.env.REACT_APP_WEATHER_BASE_URL;
 export const fetchWeather=createAsyncThunk("weatherAPI/fetchWeather" ,async ()=>{
-    console.log("calling featch weather");
+
     const response = await axios
     .get(baseUrl);
 
@@ -33,8 +33,7 @@ const weatherApiSlice=createSlice({
     },
     extraReducers(builder){
         builder.addCase(fetchWeather.pending , (state,action) => {
-            console.log("received weatherAPI/fetchWeather/pending");
-            console.log(state,action)
+
             state.isLoading=true;
 
         }).addCase(fetchWeather.fulfilled ,(state,action)=>{

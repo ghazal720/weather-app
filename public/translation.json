@@ -1,5 +1,6 @@
 {
-  "ar": {
+    "ar": {
+
     "hello_world": "أهلاً بالعالم",
     "min": "الصغرى",
     "max": "الكبرى",
@@ -14,9 +15,13 @@
     "thunderstorm": "رعد / عاصفة رعدية",
     "snow": "ثلج",
     "mist": "ضباب خفيف",
-    "As-Suwayda": "السويداء"
+    "As-Suwayda": "السويداء",
+    "fog":"ضباب",
+    "overcast clouds":"غيوم غائمة كليا",
+    "undefined":"...جاري التحميل"
     },
     "en": {
+    
     "hello_world": "Hello World",
     "min": "Min",
     "max": "Max",
@@ -31,6 +36,9 @@
     "thunderstorm": "Thunderstorm",
     "snow": "Snow",
     "mist": "Mist",
-    "As-Suwayda": "As-Suwayda"
+    "As-Suwayda": "As-Suwayda",
+    "fog":"Fog",
+    "overcast clouds":"Overcast clouds",
+    "undefined":"Loading..."
     }
 }

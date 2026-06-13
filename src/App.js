@@ -47,7 +47,6 @@ export default function App() {
   const currentDir = isRtl ? "rtl" : "ltr";
 
   return (
-    // الخلفية العامة رمادية فاتحة وناعمة مريحة جداً للعين
     <div className='App' style={{ backgroundColor: "#f5f7fa", minHeight: "100vh" }}>
       <Container maxWidth="sm">
         {/* CONTENT CONTAINER */}
@@ -60,12 +59,11 @@ export default function App() {
             flexDirection: "column"
           }}
         >
-          {/* CARD: أبيض ناصع، مرتفع قليلاً بظل ناعم وحواف دائرية احترافية */}
           <div 
             dir={currentDir}
             style={{
               background: "#ffffff",
-              color: "#2c3e50", // لون نصوص غامق وأنيق متباين مع الأبيض
+              color: "#2c3e50", 
               width: "100%",
               padding: "25px",
               borderRadius: "20px",
@@ -85,9 +83,8 @@ export default function App() {
                   marginBottom: "15px"
                 }} 
               >
-                {/* قراءة اسم المدينة ديناميكياً من السيرفر مع دمج الملف الموحد */}
                 <Typography variant="h3" style={{ fontWeight: "700", color: "#1a252f" }}>
-                  {t(`${locale}.${Temp.name || 'As-Suwayda'}`)}
+                  {t(Temp?.name || 'As-Suwayda')}
                 </Typography>
                 <Typography variant="body1" style={{ color: "#7f8c8d", fontWeight: "550" }}>
                   {dateAndTime}
@@ -106,29 +103,27 @@ export default function App() {
                       <CircularProgress size={40} style={{ color: "#3498db" }}/>
                     ) : (
                       <Typography variant="h1" style={{ fontWeight: "700", color: "#2c3e50" }}>
-                        {Temp.number}°
+                        {Temp?.number}°C
                       </Typography>
                     )}
                     {Temp.icon && <img src={Temp.icon} alt="weather icon" style={{ width: "60px", height: "60px" }}/>}
                   </div>
                   
                   <Typography variant="h6" style={{ color: "#34495e", marginTop: "5px", textTransform: "capitalize", fontWeight: "600" }}>
-                    {t(`${locale}.${Temp.description}`)}
+                    {t(Temp.description?.toLowerCase())}
                   </Typography>
                   
-                  {/* الصغرى والكبرى بتنسيق مرن ومتناسق */}
                   <div style={{ display: "flex", gap: "15px", marginTop: "10px", color: "#7f8c8d" }}>
                     <Typography variant="body2" style={{ fontWeight: "600" }}>
-                      {t(`${locale}.min`)}: <span style={{ color: "#e74c3c" }}>{Temp.min}°</span>
+                      {t("min")}: <span style={{ color: "#e74c3c" }}>{Temp.min}°</span>
                     </Typography>
                     <span style={{ color: "#bdc3c7" }}>|</span>
                     <Typography variant="body2" style={{ fontWeight: "600" }}>
-                      {t(`${locale}.max`)}: <span style={{ color: "#2ecc71" }}>{Temp.max}°</span>
+                      {t("max")}: <span style={{ color: "#2ecc71" }}>{Temp.max}°</span>
                     </Typography>
                   </div>
                 </div>
 
-                {/* أيقونة الطقس الجانبية الكبيرة بلون متناسق ومريح للعين */}
                 <CloudIcon style={{ fontSize: "120px", color: "#3498db", opacity: "0.8" }} />
               </div>
             </div>

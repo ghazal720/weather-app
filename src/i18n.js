@@ -12,7 +12,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en', // اللغة الاحتياطية في حال فشل تحميل اللغة الأساسية
-    debug: true,
+    debug: false,
 
 
     backend: {
